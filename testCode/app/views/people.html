@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>People at Company</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body-->
+<div class="page-header">
+	<h1>People Information</h1>
+</div>
+ 
+<!-- SINGLE COMPANY DETAILS -->
+<div class="container">
+<div class="row">
+			<div class="panel panel-default  col-md-6 col-md-offset-1" id="peoplePanel">
+				<div class="panel-heading">
+					<h3>People at {{ vm.company.name }}</h3>
+				</div>
+				
+				<div class="panel-body" ng-repeat="person in vm.people">
+					<ul class="a">
+						<li>{{person.name}}</li>
+						<li>Email: {{person.email}}</li>
+					</ul>
+				</div>
+
+				<div class="panel-footer">
+					<a class="link" name="btnPersonDetails" href="#/companies/{{ vm.company._id }}"> Back to {{ vm.company.name }} </a>
+				</div>
+			</div>
+
+		<form class="panel panel-default col-md-3 col-md-offset-1" name="vm.addForm" ng-submit="vm.addPerson()" id="addPersonForm">
+			<div class="panel-heading">
+				<h3>Add a new person</h3>
+			</div>
+
+			<div class="panel-body">
+				<p>Name: </p>
+				<p><input type="text" name="personName" ng-model="vm.personName" class="form-control"></p>
+				<!-- <div ng-show="vm.addForm.companyName.$dirty && vm.addForm.companyName.$invalid && vm.isSubmitted">
+					<p>Name should be more than 2 characters long</p>
+				</div> -->
+				
+				<p>Email: </p>
+				<p><input type="text" name="personEmail" required ng-model="vm.personEmail" class="form-control"></p>
+				<!-- <div ng-show="vm.addForm.companyRevenue.$dirty && vm.addForm.companyRevenue.$invalid && vm.isSubmitted">
+					<p>Revenue should be between 3-6 numbers</p>
+				</div> -->
+
+				<!-- <p>Company:</p>
+				<p><input type="text" name="companyID" required ng-model="vm.companyID" class="form-control"></p> -->
+				<!-- <div ng-show="vm.addForm.companyPhone.$dirty && vm.addForm.companyPhone.$error.ng-minlength ||  vm.addForm.companyPhone.$error.ng-maxlength">
+					<p>Name should be 10 numbers long</p>
+				</div> -->
+				<br/>	
+				<p><button type="submit" name="btnSubmit" class="btn btn-default">ADD</button></p>
+			</div>
+		</form>
+	</div>
+</div>
+		<!-- <div ng-view=""></div> -->
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-resource.min.js"></script> -->
+	<!-- <script type="text/javascript" src="app.js"></script> -->
+</body>
+</html> -->
