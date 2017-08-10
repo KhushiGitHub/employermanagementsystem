@@ -11,7 +11,9 @@
 angular
   .module('employermanagementsystemApp', [
     'ngAnimate',
+    'ngAria',
     'ngCookies',
+    'ngMessages',
     'ngResource',
     'ngRoute',
     'ngSanitize',
