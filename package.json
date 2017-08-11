@@ -38,6 +38,8 @@
   },
   "scripts": {
     "test": "karma start test/karma.conf.js",
-    "start": "node testcode/app/app.js"
+    "mongo": "mongod --dbpath data/db",
+    "server": "cd server && node server.js",
+    "start": "npm run mongo & sleep 3 & npm run server"
   }
 }
